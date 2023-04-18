@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build . -t Prem-capstone
+docker build . -t prem-capstone
 
 # Step 2: 
 # List docker images
