@@ -44,17 +44,17 @@ Pipeline steps:
 Used `eksctl` with the following command to deploy an EKS cluster:
 ```
 eksctl create cluster \
-    --name longnv43-capstone \
+    --name Prem-capstone \
     --version 1.24 \
     --nodegroup-name standard-workers \
     --node-type t3.medium \
     --nodes 1 \
     --nodes-min 1 \
     --nodes-max 2 \
-    --region ap-southeast-1 \
-    --zones ap-southeast-1a \
-    --zones ap-southeast-1b \
-    --zones ap-southeast-1c
+    --region ap-us-east-1 \
+    --zones ap-us-east-1a \
+    --zones ap-us-east-1b \
+    --zones ap-us-east-1c
 ```
 #### EKS Cluster
 ![eks-cluster](screenshot/eks-cluster.png)
