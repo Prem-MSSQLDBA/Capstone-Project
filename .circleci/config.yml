@@ -98,7 +98,7 @@ jobs:
           command: |
             echo "Kubernetes nodes:"
             kubectl get nodes
-            # ls -la
+            ls -la
             kubectl apply -f k8s/Prem-capstone.yml
             kubectl get deploy,rs,svc,pods
             kubectl rollout restart deployment/Prem-capstone
