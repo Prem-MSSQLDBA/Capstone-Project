@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build . -t udacity-capstone
+docker build . -t Prem-capstone
 
 # Step 2: 
 # List docker images
@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-# docker run -p 80:80 udacity-capstone
+# docker run -p 80:80 Prem-capstone
