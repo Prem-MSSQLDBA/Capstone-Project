@@ -1,6 +1,6 @@
 # Udacity Cloud DevOps Engineer - Capstone Project 
 
-[![nvlong17](https://circleci.com/gh/nvlong17/devops-capstone.svg?style=svg)](https://app.circleci.com/pipelines/github/nvlong17/devops-capstone)
+
 
 ## Steps in Completing Your Project
 ### Step 1: Propose and Scope the Project

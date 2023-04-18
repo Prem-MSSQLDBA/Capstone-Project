@@ -2,27 +2,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: longnv43-capstone
+  name: Prem-capstone
   labels:
-    app: longnv43-capstone
+    app: Prem-capstone
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: longnv43-capstone
+      app: Prem-capstone
   replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 25%
-      maxSurge: 25%
+      maxUnavailable: 30%
+      maxSurge: 30%
   template:
     metadata:
       labels:
-        app: longnv43-capstone
+        app: Prem-capstone
     spec:
       containers:
-      - name: longnv43-capstone
+      - name: Prem-capstone
         image: 156705469633.dkr.ecr.ap-southeast-1.amazonaws.com/udacity-capstone:latest
         imagePullPolicy: "Always"
         ports:
@@ -31,10 +31,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: longnv43-capstone-service
+  name: Prem-capstone-service
 spec:
   selector:
-    app: longnv43-capstone
+    app: Prem-capstone
   type: LoadBalancer
   ports:
   - name: http

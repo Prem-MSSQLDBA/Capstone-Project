@@ -89,7 +89,7 @@ jobs:
           command: |
             aws eks update-kubeconfig \
             --region ${AWS_DEFAULT_REGION} \
-            --name longnv43-capstone
+            --name Prem-capstone
       - attach_workspace:
           at: ~/
       - run:
@@ -98,10 +98,10 @@ jobs:
             echo "Kubernetes nodes:"
             kubectl get nodes
             # ls -la
-            kubectl apply -f k8s/longnv43-capstone.yml
+            kubectl apply -f k8s/Prem-capstone.yml
             kubectl get deploy,rs,svc,pods
-            kubectl rollout restart deployment/longnv43-capstone
-            kubectl rollout status deployment/longnv43-capstone
+            kubectl rollout restart deployment/Prem-capstone
+            kubectl rollout status deployment/Prem-capstone
 
 workflows:
   default:
