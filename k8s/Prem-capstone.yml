@@ -2,14 +2,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Prem-capstone
+  name: prem-capstone
   labels:
-    app: Prem-capstone
+    app: prem-capstone
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: Prem-capstone
+      app: prem-capstone
   replicas: 1
   strategy:
     type: RollingUpdate
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: Prem-capstone
+        app: prem-capstone
     spec:
       containers:
-      - name: Prem-capstone
+      - name: prem-capstone
         image: 467723919671.dkr.ecr.us-east-1.amazonaws.com/prem-capstone
         imagePullPolicy: "Always"
         ports:
@@ -31,10 +31,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: Prem-capstone-service
+  name: prem-capstone-service
 spec:
   selector:
-    app: Prem-capstone
+    app: prem-capstone
   type: LoadBalancer
   ports:
   - name: http

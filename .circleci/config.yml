@@ -90,7 +90,7 @@ jobs:
           command: |
             aws eks update-kubeconfig \
             --region ${AWS_DEFAULT_REGION} \
-            --name Prem-capstone
+            --name prem-capstone
       - attach_workspace:
           at: ~/
       - run:
