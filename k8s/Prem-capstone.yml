@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: prem-capstone
-        image: 467723919671.dkr.ecr.us-east-1.amazonaws.com/prem-capstone
+        image: 467723919671.dkr.ecr.us-east-1.amazonaws.com/prem-capstone:latest
         imagePullPolicy: "Always"
         ports:
         - containerPort: 80

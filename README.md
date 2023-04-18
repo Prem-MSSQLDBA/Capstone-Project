@@ -44,7 +44,7 @@ Pipeline steps:
 Used `eksctl` with the following command to deploy an EKS cluster:
 ```
 eksctl create cluster \
-    --name Prem-capstone \
+    --name prem-capstone \
     --version 1.24 \
     --nodegroup-name standard-workers \
     --node-type t3.medium \
